@@ -16,6 +16,11 @@ def circle(radius):
     total = PI * radius * radius
     return int(total)
 
+
+def division(num1, num2):
+    return int(num1 / num2)
+
+
 if __name__ == "__main__":
     print("Área do quadrado:", square(10))
     print("Área do retângulo:", rectangle(2, 2))
