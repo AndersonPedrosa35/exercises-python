@@ -13,7 +13,8 @@ def rectangle(length, width):
 
 def circle(radius):
     '''Calculate area of circle.'''
-    return PI * radius * radius
+    total = PI * radius * radius
+    return int(total)
 
 if __name__ == "__main__":
     print("Área do quadrado:", square(10))
