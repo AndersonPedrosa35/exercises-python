@@ -19,6 +19,11 @@ class test_television(unittest.TestCase):
         samsung.modificar_canal(20)
         self.assertEqual(samsung.canal, 20)
     
+    def test_exception_modificar_canal(self):
+        samsung = television(145)
+        with self.assertRaises(ValueError):
+            samsung.modificar_canal(101)
+
     def test_liga_desligar(self):
         samsung = television(145)
         samsung.liga_desligar()

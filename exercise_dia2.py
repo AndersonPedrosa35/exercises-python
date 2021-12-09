@@ -17,7 +17,7 @@ class television:
         if 0 < canal < 99:
             self.canal = canal
         else:
-            raise ValueError('O valor passado não está entre 0 e 99')
+            raise ValueError
 
     def liga_desligar(self):
         self.ligada = not self.ligada
